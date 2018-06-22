@@ -1,0 +1,20 @@
+<!--pages/company/company.wxml-->
+<view class='container'>
+  <view class='header'>
+    <view class='search'>
+      <label>
+        <image src='../../image/ic_search.png'></image>
+        <text>搜索</text>
+      </label>
+    </view>
+  </view>
+  <view class='content'>
+    <view class='item' wx:for="{{reqPerson}}" wx:for-item="current" data-phone='{{current.mobilePhone}}' data-name='{{current.name}}' catchtap='itemClick'>
+      <image src='../../image/icon_header_default.png' class='icon'></image> 
+      <view class='item_content'>
+        <text class='title' space="nbsp"> {{current.name}}  {{current.departmentName}}</text>
+         <text class='content'> {{current.mobilePhone}}</text>
+      </view>
+    </view>
+  </view>
+</view>

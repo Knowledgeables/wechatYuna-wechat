@@ -1,0 +1,92 @@
+/* pages/company/company.wxss */
+
+.header {
+  background: rgba(237, 240, 245, 1);
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+}
+
+.search {
+  width: 92%;
+  height: 60rpx;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 10rpx;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.search label {
+  height: 100%;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: row;
+  align-items: center;
+}
+
+label image {
+  width: 25rpx;
+  height: 25rpx;
+}
+
+label text {
+  line-height: 100%;
+  font-size: 26rpx;
+  margin-left: 10rpx;
+  font-family: PingFang-SC-Regular;
+  color: rgba(179, 179, 179, 1);
+}
+
+.content {
+  width: 100%;
+  display: flex;
+}
+
+.item_containter {
+  height: 120rpx;
+  width: 100%;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  flex-direction: row;
+}
+
+.icon {
+  height: 75rpx;
+  width: 75rpx;
+  line-height: 75rpx;
+  font-size: 45rpx;
+  border-radius: 50%;
+  position: absolute;
+  background-color: gray;
+  color: white;
+  text-align: center;
+  box-shadow: 1px 1px 0.5px #888;
+  overflow: hidden;
+}
+
+.item_content {
+  width: 100%;
+  right: 80rpx;
+  margin-left: 95rpx;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1rpx solid rgba(245, 249, 255, 1);
+}
+
+.item_content text {
+  font-size: 34rpx;
+  line-height: 34rpx;
+  font-family: PingFang-SC-Medium;
+  color: rgba(51, 51, 51, 1);
+  padding-bottom: 10rpx;
+}
+
+.item_content image {
+  height: 45rpx;
+  width: 145rpx;
+  margin: 0;
+}

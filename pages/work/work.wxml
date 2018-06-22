@@ -1,0 +1,70 @@
+<!--pages/work/work.wxml-->
+<view class='container'>
+  <view class='header'>
+    <view class='{{headerChoose==0?"item_selected":"item"}}' catchtap='onTabCheck'>
+      基本信息
+    </view>
+    <view class='{{headerChoose==0?"item":"item_selected"}}' catchtap='onTabCheck'>
+      基本信息
+    </view>
+  </view>
+  <swiper current='{{headerChoose}}' bindchange='swiperChange'>
+    <swiper-item>
+      <view class='company'>
+        <view class='company_item'>
+          <text>请求企业</text>
+          <input catchtap='{{currentType=="service"?"reqCompanyClick":""}}'
+          value='{{reqCompanyData.servername}}' placeholder='自己企业的名称'></input>
+          <image src='../../image/ic_enter.png' class='{{currentType=="service"?"show":"hide"}}'></image>
+        </view>
+        <view class='company_item'>
+          <text>请求人</text>
+          <input catchtap='{{currentType=="service"?"reqPersonClick":""}}'  
+          placeholder='自己的名字电话' 
+          value='{{reqPersonData.name}}-{{reqPersonData.phone}}' ></input>
+          <image src='../../image/ic_enter.png' 
+          class='{{currentType=="service"?"show":"hide"}}'></image>
+        </view>
+        <view class='company_item'>
+          <text>服务企业</text>
+          <input value='{{servCompanyData.servername}}' 
+          catchtap='{{currentType=="owner"?"servCompanyClick":""}}' 
+          placeholder='请选择(必选)' readonly="readonly"></input>
+          <image src='../../image/ic_enter.png' class='{{currentType=="owner"?"show":"hide"}}'></image>
+        </view>
+      </view>
+      <view class='.sla'>
+        <view class='sla_level'>
+          <text>故障等级(必选)</text>
+          <view class='box'>
+            <text class='box_item {{checkItem==index?"sla_checked":"sla_unchecked"}}' wx:for="{{slaData}}" bindtap='slaItemClick' data-content='{{item}}' data-index='{{index}}'>{{item.levelName}}</text>
+          </view>
+        </view>
+        <view class='sla_content'>
+          <text>SLA(必填)</text>
+          <view class='desc'>
+            <input placeholder='请输入' value='{{checkedSlaData.completeDay}}' disabled='disable'></input>天
+            <input placeholder='请输入' value='{{checkedSlaData.completeHour}}' disabled='disable'></input>天
+          </view>
+        </view>
+      </view>
+      <view class='abs'>
+        <text class='title'>简要描述</text>
+        <textarea class='content' bindinput='absDetailInput' maxlength='50'></textarea>
+        <text class='count'>{{absTextCount}}</text>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class='imageBox'>
+        <image class='gallary' wx:for="{{image}}" src='{{item}}'></image>
+        <image class='camera' catchtap='chooseClick' src='../../image/ic_photo.png'></image>
+      </view>
+    </swiper-item>
+  </swiper>
+  <view class="footer">
+    <button catchtap='sendOrderClick'>发起</button>
+  </view>
+  <view class="person">
+    <image class="person_header" catchtap='personClick' src="../../image/ic_user_header.png"></image>
+  </view>
+</view>

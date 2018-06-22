@@ -1,0 +1,44 @@
+/* pages/mine/mine.wxss */
+
+page {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background: rgba(237, 240, 245, 1);
+}
+
+.top {
+  width: 100%;
+  height: 200rpx;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 5rpx 0px 15rpx rgba(104, 157, 248, 0.2);
+  text-align: center;
+  margin-top: 30rpx;
+}
+
+.center {
+  width: 100%;
+  height: 200rpx;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 5rpx 0px 15rpx rgba(104, 157, 248, 0.2);
+  text-align: center;
+  margin-top: 30rpx;
+}
+
+.ok {
+  width: 90%;
+  height: 100rpx;
+  background: rgba(104, 157, 248, 1);
+  border-radius: 10rpx;
+  box-shadow: 5rpx 0rpx 15rpx rgba(104, 157, 248, 0.2);
+  font-size: 38rpx;
+  font-family: PingFang-SC-Bold;
+  color: rgba(255, 255, 255, 1);
+  line-height: 0rpx;
+  margin-top: 30rpx;
+  
+}

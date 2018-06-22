@@ -1,0 +1,16 @@
+/**app.wxss**/
+page
+{
+  background-color: rgba(255,255,255,1);
+}
+.place_holder
+{
+  color:rgba(184,191,204,1);
+  text-align: left;
+}
+.hide{
+ display: none;
+}
+.show{ 
+ display: block;
+}

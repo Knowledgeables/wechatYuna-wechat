@@ -1,0 +1,347 @@
+/* pages/work/work.wxss */
+
+page {
+  height: 100%;
+}
+
+.container {
+  background-color: #edf0f5;
+  width: 100%;
+  height: 100%;
+}
+
+swiper {
+  background-color: #edf0f5;
+  width: 100%;
+  min-height: 90%;
+}
+
+swiper-item {
+  width: 100%;
+  min-height: 90%;
+  display: flex;
+  flex-direction: column;
+  background-color: #edf0f5;
+}
+
+.place_holder {
+  color: rgba(179, 179, 179, 1);
+  text-align: right;
+}
+
+text {
+  font-size: 30rpx;
+}
+
+view {
+  background-color: white;
+}
+
+input {
+  font-size: 30rpx;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  background: #fff;
+  flex-direction: row;
+}
+
+.item {
+  width: 50%;
+  text-align: center;
+  height: 90rpx;
+  line-height: 90rpx;
+  font-family: PingFang-SC-Regular;
+  font-size: 30rpx;
+  border-bottom: 4rpx solid white;
+  color: #666;
+}
+
+.item_selected {
+  width: 50%;
+  text-align: center;
+  height: 90rpx;
+  line-height: 90rpx;
+  font-family: PingFang-SC-Regular;
+  font-size: 30rpx;
+  color: #689df8;
+  border-bottom: 4rpx solid #689df8;
+}
+
+.leftContent {
+  width: 100%;
+  background: #fff;
+}
+
+.company {
+  width: 100%;
+  padding-left: 4%;
+  height: 300rpx;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  border-bottom: 20rpx solid #f5f7fa;
+  border-top: 20rpx solid #f5f7fa;
+}
+
+.company_item {
+  height: 100rpx;
+  width: 100%;
+  border-bottom: 1rpx solid #ededed;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+}
+
+.company_item text {
+  width: 140rpx;
+  line-height: 100rpx;
+  float: left;
+}
+
+.company_item input {
+  width: 500rpx;
+  height: 100%;
+  line-height: 100rpx;
+  padding-right: 50rpx;
+  text-align: right;
+  float: left;
+}
+
+.company_item image {
+  width: 17rpx;
+  height: 30rpx;
+  float: left;
+}
+
+.sla {
+  width: 100%;
+  padding-left: 4%;
+  height: 200rpx;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  border-bottom: 20rpx solid #f5f7fa;
+}
+
+.sla_level {
+  height: 100rpx;
+  width: 100%;
+  display: inline-flex;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1rpx solid #ededed;
+}
+
+.sla_level text {
+  width: 35%;
+  line-height: 100rpx;
+  overflow: hidden;
+}
+
+.sla_level .box {
+  height: 56rpx;
+  word-break: keep-all; /* 不换行 */
+  white-space: nowrap; /* 不换行 */
+  list-style: none;
+  border-width: medium;
+  background-color: blue;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  border-top: 1rpx solid rgba(104, 157, 248, 1);
+  border-bottom: 1rpx solid rgba(104, 157, 248, 1);
+  border-right: 1rpx solid rgba(104, 157, 248, 1);
+  border-left: 1rpx solid rgba(104, 157, 248, 1);
+  border-radius: 10rpx;
+}
+
+.box_item {
+  float: left;
+  height: 100%;
+  padding-left: 25rpx;
+  padding-right: 25rpx;
+  text-align: center;
+  word-break: keep-all; /* 不换行 */
+  white-space: nowrap; /* 不换行 */
+  overflow: hidden; /* 内容超出宽度时隐藏超出部分的内容 */
+  color: rgba(104, 157, 248, 1);
+  line-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 1);
+  border-left: 1rpx solid rgba(104, 157, 248, 1);
+  border-right: 1rpx solid rgba(104, 157, 248, 1);
+}
+
+.sla_content {
+  height: 100rpx;
+  width: 100%;
+  display: inline-flex;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1rpx solid #ededed;
+}
+
+.sla_content text {
+  width: 35%;
+  line-height: 100rpx;
+  overflow: hidden;
+}
+
+.sla_content .desc {
+  line-height: 100rpx;
+  overflow: hidden;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: row;
+  color: rgba(51, 51, 51, 1);
+  font-size: 30rpx;
+}
+
+.desc input {
+  width: 145rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+}
+
+.sla_checked {
+  width: 100%;
+  background-color: #689df8;
+  color: white;
+}
+
+.sla_unchecked {
+  background-color: #fff;
+}
+
+.abs {
+  width: 100%;
+  padding-left: 4%;
+  height: 200rpx;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  border-bottom: 1rpx solid #f5f7fa;
+}
+
+.abs .title {
+  height: 65rpx;
+  width: 100%;
+  text-align: left;
+  align-items: flex-end;
+  font-size: 30rpx;
+  font-family: PingFang-SC-Medium;
+  color: rgba(51, 51, 51, 1);
+  line-height: 65rpx;
+}
+
+.abs .content {
+  width: 90%;
+  font-size: 30rpx;
+  font-family: PingFang-SC-Medium;
+  height: 120rpx;
+  position: relative;
+}
+
+.abs .count {
+  z-index: 9999;
+  height: 60rpx;
+  width: 90%;
+  text-align: right;
+  font-size: 30rpx;
+  font-family: PingFang-SC-Regular;
+  color: rgba(51, 51, 51, 1);
+  line-height: 30rpx;
+  padding-right: 20rpx;
+}
+
+.footer {
+  height: 130rpx;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 1);
+  display: flex; /*Flex布局*/
+  display: -webkit-flex; /* Safari */
+  align-items: center; /*指定垂直居中*/
+  position: absolute;
+  bottom: 0; /* 关键 */
+  left: 0; /* IE下一定要记得 */
+}
+
+.footer button {
+  height: 100rpx;
+  background: rgba(104, 157, 248, 1);
+  border-radius: 10rpx;
+  box-shadow: 5rpx 0 5rpx rgba(104, 157, 248, 0.2);
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  font-size: 38rpx;
+  font-family: PingFang-SC-Bold, serif;
+  color: rgba(255, 255, 255, 1);
+}
+
+.person {
+  width: 96%;
+  height: 200rpx;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0);
+  align-items: center; /*指定垂直居中*/
+  z-index: 9999;
+  position: absolute;
+  bottom: 130rpx; /* 关键 */
+  padding-right: 30rpx;
+}
+
+.person_header {
+  width: 100rpx;
+  height: 100rpx;
+  float: right;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.rightContent {
+  width: 100%;
+}
+
+/* 图片选择 */
+
+.imageBox {
+  width: 96%;
+  display: flex;
+  flex-direction: row;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding-left: 5%;
+}
+
+.camera {
+  width: 28%;
+  height: 30vw;
+  float: left;
+  margin-top: 0.2rem;
+  margin-right: 5%;
+}
+
+.gallary {
+  margin-top: 0.2rem;
+  width: 28%;
+  height: 30vw;
+  float: left;
+  margin-right: 5%;
+  position: relative;
+}

@@ -1,0 +1,10 @@
+<!--pages/mine/mine.wxml-->
+<view class='container'>
+<view class='top'>
+
+</view>
+<view class='center'>
+
+</view>
+<button class='ok'></button>
+</view>

@@ -1,0 +1,37 @@
+<!--pages/login/login.wxml-->
+<view class='container'>
+  <view class='top'>
+    <image class='user_header' src='../../image/ic_logo.png'></image>
+  </view>
+  <view class='tab'>
+    <text class='tab_item {{currentType==="service"?"tab_check":""}}' data-tag='service' catchtap='tabClick'>服务商</text>
+    <text class='tab_item {{currentType==="owner"?"tab_check":""}}' data-tag='owner' catchtap='tabClick'>业主</text>
+  </view>
+  <swiper bindchange='loginSwiperChange' current='{{currentType==="service"?"0":"1"}}'>
+    <swiper-item>
+      <view class='input'>
+        <image src='../../image/ic_account.png'></image>
+        <input placeholder-class='place_holder' type='number' value='{{serviceData.userName}}' maxlength='11' placeholder='账号' bindinput='userNameInput'></input>
+      </view>
+      <view class='input'>
+        <image src='../../image/ic_password.png'></image>
+        <input placeholder-class='place_holder' type='password' value='{{serviceData.password}}' maxlength='26' placeholder='密码' bindinput='passwordInput'></input>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class='input'>
+        <image src='../../image/ic_account.png'></image>
+        <input placeholder-class='place_holder' type='number' value='{{ownerData.userName}}' maxlength='11' placeholder='账号' bindinput='userNameInput'></input>
+      </view>
+      <view class='input'>
+        <image src='../../image/ic_password.png'></image>
+        <input placeholder-class='place_holder' type='password' value='{{ownerData.password}}' maxlength='26' placeholder='密码' bindinput='passwordInput'></input>
+      </view>
+    </swiper-item>
+
+  </swiper>
+  <view class='bottom'>
+    <button class='login' catchtap='doLoginClick'>登录</button>
+    <text catchtap='doForgetPassword'>忘记密码？</text>
+  </view>
+</view>

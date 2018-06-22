@@ -1,0 +1,6 @@
+/**index.wxss**/
+swiper
+{
+  position: relative;
+  margin: 10rpx;
+}

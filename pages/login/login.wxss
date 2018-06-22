@@ -1,0 +1,128 @@
+/* pages/login/login.wxss */
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.top {
+  height: 290rpx;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.user_header {
+  display: block;
+  position: relative;
+  width: 209rpx;
+  height: 209rpx;
+  margin: 0 auto;
+}
+
+.tab {
+  width: 80%;
+  height: 120rpx;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.tab_item {
+  width: 45%;
+  height: 72rpx;
+  background-color: #f5f7fa;
+  color: #475366;
+  font-size: 30rpx;
+  align-self: center;
+  font-family: PingFang-SC-Medium;
+  line-height: 72rpx;
+  text-align: center;
+  border-radius: 50rpx;
+  box-shadow: 5rpx 0rpx 15rpx rgba(104, 157, 248, 0.2);
+}
+
+.tab_check {
+  background-color: #689df8;
+  color: rgba(255, 255, 255, 1);
+}
+swiper{
+  width: 100%;
+  height: 330rpx;
+}
+swiper-item{
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 20rpx;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+
+.input {
+  height: 100rpx;
+  width: 80%;
+  padding-left: 30rpx;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  background: rgba(245, 247, 250, 1);
+  border-radius: 50rpx;
+  box-shadow: 5rpx 0rpx 15rpx rgba(104, 157, 248, 0.2);
+}
+
+.input image {
+  width: 28rpx;
+  height: 32rpx;
+}
+
+.input input {
+  height: 80%;
+  width: 90%;
+  font-size: 34rpx;
+  margin-left: 4%;
+  font-family: PingFang-SC-Regular;
+  color: rgba(71, 83, 102, 1);
+  text-align: center;
+  line-height: 80%;
+}
+
+.bottom {
+  height: 170rpx;
+  width: 84%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  margin-top: 50rpx;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login {
+  width: 100%;
+  height: 100rpx;
+  background: rgba(104, 157, 248, 1);
+  border-radius: 50rpx;
+  box-shadow: 5rpx 0px 15rpx rgba(104, 157, 248, 0.2);
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 38rpx;
+  font-family: PingFang-SC-Bold;
+  color: rgba(255, 255, 255, 1);
+}
+
+.bottom text {
+  font-size: 26rpx;
+  margin-top: 40rpx;
+  font-family: PingFang-SC-Regular;
+  color: rgba(184, 191, 204, 1);
+}

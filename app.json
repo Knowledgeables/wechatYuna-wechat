@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/mine/mine",
+    "pages/login/login",
+    "pages/work/work",
+    "pages/company/company",
+    "pages/person/person"
+    
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "云呐",
+    "navigationBarTextStyle": "black"
+  }
+}

@@ -1,0 +1,22 @@
+<!--pages/company/company.wxml-->
+<view class='container'>
+  <view class='header'>
+    <view class='search'>
+      <label>
+        <image src='../../image/ic_search.png'></image>
+        <text>搜索</text>
+      </label>
+    </view>
+  </view>
+  <view class='content' wx:for="{{reqCompany}}" wx:for-item="current">
+    <view class='item_containter' data-serverName='{{current.serverName}}'  data-companyCode='{{current.companyCode}}' catchtap='itemClick'>
+      <view class='icon' style='background-color:{{current.bgcolor}}'>
+        {{current.serverName}}.substring(0, 1)
+      </view> 
+      <view class='item_content'>
+        <text> {{current.serverName}}</text>
+        <image src='{{current.src}}'></image>
+      </view>
+    </view>
+  </view>
+</view>
