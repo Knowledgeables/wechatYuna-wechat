@@ -46,6 +46,9 @@ var OWNER_SEND_CODE = OWNER + "sendVercode.htm";
 var SERVICE_RESET_PWD = SERVER + "forgetUserPwd.htm";
 var OWNER_RESET_PWD = OWNER + "forgetUserPwd.htm";
 
+
+var ceshi = OWNER + "修改代码";
+
 module.exports = {
   SERVICE_FILE: SERVICE_FILE,
   OWNER_FILE: OWNER_FILE,
@@ -63,5 +66,6 @@ module.exports = {
   SERVICE_SEND_CODE: SERVICE_SEND_CODE,
   OWNER_SEND_CODE: OWNER_SEND_CODE,
   SERVICE_RESET_PWD: SERVICE_RESET_PWD,
-  OWNER_RESET_PWD: OWNER_RESET_PWD
+  OWNER_RESET_PWD: OWNER_RESET_PWD,
+    ceshi:ceshi
 }
